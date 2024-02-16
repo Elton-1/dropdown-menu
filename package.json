@@ -1,5 +1,5 @@
 {
-  "name": "dropdown-menu",
+  "name": "dropdown-menu-js",
   "version": "1.0.0",
   "description": "An dropdown menu package",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elton-1/dropdown-menu.git"
+    "url": "https://github.com/Elton-1/dropdown-menu.git"
   },
   "author": "elton <elton.rexha123@example.com>",
   "license": "MIT",

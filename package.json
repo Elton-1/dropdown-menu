@@ -2,7 +2,7 @@
   "name": "dropdown-menu-js",
   "version": "1.0.0",
   "description": "An dropdown menu package",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/Elton-1/dropdown-menu.git"
   },
-  "author": "elton <elton.rexha123@example.com>",
+  "author": "Elton",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Elton-1/dropdown-menu/issues"

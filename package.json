@@ -1,6 +1,6 @@
 {
   "name": "dropdown-menu-js",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "An dropdown menu package",
   "main": "index.mjs",
   "scripts": {

@@ -1,16 +1,18 @@
 export default (
-  dropDownContainerClass,
-  dropDownItemClass,
-  dropdownItemsDisplayType
+  dropDownContainerSelector,
+  dropDownItemSelector,
+  dropDownElementSelector,
+  dropdownItemsDisplaySelector
 ) => {
-  const dropdownContainer = document.querySelector(dropDownContainerClass);
-  const dropdownItems = document.querySelectorAll(dropDownItemClass);
+  const dropdownItems = document.querySelectorAll(`${dropDownContainerSelector} ${dropDownItemSelector}`);
+  const dropdownElement = document.querySelector(`${dropDownContainerSelector} > ${dropDownElementSelector}`);
 
   dropdownItems.forEach((item) => (item.style.display = "none"));
 
-  dropdownContainer.onclick = () => {
+  dropdownElement.onclick = () => {
     dropdownItems.forEach((item) => {
-      item.style.display = item.style.display === "none" ? dropdownItemsDisplayType : "none"; 
+      item.style.display =
+        item.style.display === "none" ? dropdownItemsDisplaySelector : "none";
     });
   };
 };

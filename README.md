@@ -15,26 +15,35 @@ npm install dropdown-menu-js
 To use Dropdown Menu JS, import the default function and call it with the necessary parameters:
 
 ```javascript
-import dropdownMenu from 'dropdown-menu-js';
+import dropdownMenu from "dropdown-menu-js";
 
-// Replace these variables with your specific class names and options
-const dropDownContainerClass = '.dropdown-container';
-const dropDownItemClass = '.dropdown-item';
-const dropdownItemsDisplayType = 'block';
+// Replace these variables with your specific selector names and options
+const dropDownContainerSelector = ".dropdown-container";
+const dropDownItemSelector = ".dropdown-item";
+//This is the element that the dropdown will be activated uppon
+const dropDownElementSelector = ".dropdown-element"
+const dropdownItemsDisplayType = "block";
 
-dropdownMenu(dropDownContainerClass, dropDownItemClass, dropdownItemsDisplayType);
+dropdownMenu(
+  dropDownContainerSelector,
+  dropDownItemSelector,
+  dropDownElementSelector,
+  dropdownItemsDisplayType
+);
 ```
 
-- `dropDownContainerClass`: The class name of the dropdown container element.
-- `dropDownItemClass`: The class name of the dropdown item elements.
+- `dropDownContainerSelector`: The selector name of the dropdown container element.
+- `dropDownItemSelector`: The selector name of the dropdown item elements.
+- `dropDownElementSelector`: The selector name of the dropdown element that the dropdown will be activated uppon.
 - `dropdownItemsDisplayType`: The display type for dropdown items (e.g., 'block', 'flex', etc.).
 
 ## Example
 
 HTML:
+
 ```html
 <div class="dropdown-container">
-  <button>Dropdown</button>
+  <button class="dropdown-btn">DropDown Btn</button>
   <div class="dropdown-item">Item 1</div>
   <div class="dropdown-item">Item 2</div>
   <div class="dropdown-item">Item 3</div>
@@ -42,14 +51,21 @@ HTML:
 ```
 
 JavaScript:
+
 ```javascript
-import dropdownMenu from '<Directory-to-package>';
+import dropdownMenu from "<File-path>";
 
-const dropDownContainerClass = '.dropdown-container';
-const dropDownItemClass = '.dropdown-item';
-const dropdownItemsDisplayType = 'block';
+const dropDownContainerClass = ".dropdown-container";
+const dropDownItemClass = ".dropdown-item";
+const dropdownElementClass = ".dropdown-btn";
+const dropdownItemsDisplayType = "block";
 
-dropdownMenu(dropDownContainerClass, dropDownItemClass, dropdownItemsDisplayType);
+dropdownMenu(
+  dropDownContainerClass,
+  dropDownItemClass,
+  dropdownElementClass,
+  dropdownItemsDisplayType
+);
 ```
 
 This will initialize the dropdown menu functionality for the specified container and items, making them visible upon interaction.
